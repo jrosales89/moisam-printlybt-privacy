@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Privacidad – Moisam Printly BT</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f9f9ff;color:#1a1a2e;line-height:1.7;padding:24px 16px}
+    .container{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;padding:40px 36px;box-shadow:0 2px 16px rgba(0,0,0,.08)}
+    h1{font-size:1.6rem;color:#004ac6;margin-bottom:6px}
+    .updated{font-size:.85rem;color:#6b7280;margin-bottom:32px}
+    h2{font-size:1.05rem;color:#004ac6;margin:28px 0 10px;border-left:3px solid #004ac6;padding-left:10px}
+    p{margin-bottom:12px;font-size:.95rem}
+    table{width:100%;border-collapse:collapse;margin:12px 0 16px;font-size:.9rem}
+    th{background:#eef2ff;color:#004ac6;text-align:left;padding:8px 12px;border:1px solid #c7d2fe}
+    td{padding:8px 12px;border:1px solid #e0e7ff;vertical-align:top}
+    td code{background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:.85rem}
+    blockquote{background:#f0fdf4;border-left:4px solid #34a853;padding:10px 14px;border-radius:6px;font-size:.9rem;margin:12px 0}
+    ul{padding-left:20px;margin-bottom:12px;font-size:.95rem}
+    li{margin-bottom:4px}
+    .contact{background:#eef2ff;border-radius:10px;padding:14px 18px;margin-top:8px}
+    .contact a{color:#004ac6}
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Política de Privacidad</h1>
+  <p class="updated">Moisam Printly BT &nbsp;·&nbsp; Última actualización: 13 de junio de 2026</p>
+
+  <h2>1. Información General</h2>
+  <p>Moisam Printly BT ("la Aplicación") es una herramienta que actúa como puente entre sistemas de punto de venta (POS) y impresoras térmicas Bluetooth mediante un servidor TCP local. Esta política describe cómo la Aplicación maneja la información en tu dispositivo.</p>
+
+  <h2>2. Datos que la Aplicación NO recopila</h2>
+  <p>Moisam Printly BT <strong>no recopila, almacena, transmite ni comparte ningún dato personal</strong> con servidores externos. La Aplicación funciona completamente de forma local en tu dispositivo.</p>
+  <ul>
+    <li>No recopilamos nombre, correo ni información de identidad</li>
+    <li>No recopilamos ni registramos tu ubicación geográfica</li>
+    <li>No almacenamos el contenido de los documentos impresos</li>
+    <li>No usamos analíticas ni herramientas de seguimiento</li>
+    <li>No recopilamos información de pago</li>
+  </ul>
+
+  <h2>3. Permisos utilizados</h2>
+  <table>
+    <tr><th>Permiso</th><th>Motivo</th></tr>
+    <tr><td><code>BLUETOOTH</code>, <code>BLUETOOTH_ADMIN</code></td><td>Conectarse a impresoras Bluetooth en Android 9–11</td></tr>
+    <tr><td><code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code></td><td>Descubrir y conectar impresoras en Android 12+</td></tr>
+    <tr><td><code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code></td><td>Requerido por Android para el escaneo de dispositivos Bluetooth cercanos</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE</code></td><td>Mantener el puente TCP‑Bluetooth activo en segundo plano</td></tr>
+    <tr><td><code>POST_NOTIFICATIONS</code></td><td>Mostrar notificación del servicio activo</td></tr>
+    <tr><td><code>INTERNET</code></td><td>Recibir trabajos de impresión vía red TCP local</td></tr>
+  </table>
+  <blockquote>
+    <strong>Nota sobre ubicación:</strong> Android exige el permiso de ubicación para el escaneo Bluetooth. La Aplicación <strong>nunca accede ni registra tu posición geográfica real</strong>.
+  </blockquote>
+
+  <h2>4. Datos almacenados localmente</h2>
+  <p>La Aplicación guarda en tu dispositivo únicamente:</p>
+  <ul>
+    <li>Dirección MAC y nombre de la última impresora conectada (para auto-reconexión)</li>
+    <li>Preferencias de configuración: puerto TCP, nivel de logs, opciones de pantalla</li>
+  </ul>
+  <p>Estos datos se almacenan en las preferencias locales de Android y <strong>nunca salen de tu dispositivo</strong>.</p>
+
+  <h2>5. Servicio en segundo plano</h2>
+  <p>La Aplicación utiliza un servicio en primer plano para mantener activa la conexión Bluetooth y el servidor TCP mientras está en segundo plano. Este servicio muestra una notificación permanente mientras está activo, como lo requiere Android.</p>
+
+  <h2>6. Conexiones de red</h2>
+  <p>La Aplicación abre un servidor TCP local (puerto 9100 por defecto) accesible únicamente dentro de tu red local. No se realizan conexiones a servidores externos ni a Internet.</p>
+
+  <h2>7. Menores de edad</h2>
+  <p>La Aplicación no está dirigida a menores de 13 años y no recopila información de ninguna persona menor de esa edad.</p>
+
+  <h2>8. Cambios a esta política</h2>
+  <p>Cualquier modificación será publicada en esta misma página con la fecha de actualización correspondiente.</p>
+
+  <h2>9. Contacto</h2>
+  <div class="contact">
+    Si tienes preguntas sobre esta política de privacidad, escríbenos a:<br/>
+    <strong>Correo:</strong> <a href="mailto:jorge@rp26ve.com">jorge@rp26ve.com</a>
+  </div>
+
+</div>
+</body>
+</html>
